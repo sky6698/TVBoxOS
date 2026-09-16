@@ -93,6 +93,8 @@ class ProtectedInitJar {
                 }
             }
             return bound;
+        } catch (ClassNotFoundException ignored) {
+            return true;
         } catch (Throwable ignored) {
         }
         return false;
